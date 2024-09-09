@@ -55,10 +55,12 @@
 }
 
 .navbar-button {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   display: none;
+  flex-direction: row;
+}
+
+.navbar-button.show {
+  display: flex;
 }
 
 .navbar-toggle {
@@ -223,6 +225,11 @@
 
   .navbar-button {
     display: none;
+    flex-direction: column;
+  }
+
+  .navbar-button.show {
+    display: flex;
   }
 
   .navbar-toggle {
@@ -315,10 +322,21 @@
 
   .navbar-button {
     display: none;
+    flex-direction: column;
+  }
+
+  .navbar-button.show {
+    display: flex;
   }
 
   .navbar-toggle {
     display: block;
+  }
+
+  .nav-button {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
   }
 
   #navbar {

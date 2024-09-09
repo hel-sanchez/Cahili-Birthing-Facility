@@ -1,79 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Playwright+HU&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Playwright+HU&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Home.css" />
+  </head>
 
-<body style="font-family: 'Playwright HU', Arial, sans-serif; margin: 0; padding: 0; background-image: url('Images/bg image.png'); background-size: cover; background-position: center; color: #000; display: flex; flex-direction: column; min-height: 100vh;">
-    <header style="background: linear-gradient(135deg, #FFDAC5 0%, #FFDAC5 100%); padding: 20px; text-align: center; border-bottom: 4px solid #FF9B9B; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-        <h1 style="margin: 0; color: #FFF; font-size: 2.5em;">
-            <img src="Images/Cahili_Logo.png" alt="Logo" style="width: 700px; vertical-align: middle; margin-right: 10px;"> 
-        </h1>
+  <body
+    style="
+      font-family: 'Playwright HU', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Images/bg image.png');
+      background-size: cover;
+      background-position: center;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    "
+  >
+    <header id="header">
+      <div class="header-container">
+        <a href="Home.html">
+          <img
+            class="logo"
+            src="Images/Cahili_Logo.png"
+            alt="Cahili Birthing Facility"
+          />
+        </a>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav id="navbar" class="navbar-button">
+          <a href="Home.html" class="nav-button">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="about.html" class="nav-button">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+          <a href="contact us.html" class="nav-button">
+            <i class="fas fa-user"></i> Contact
+          </a>
+          <a href="priceServices.html" class="nav-button">
+            <i class="fas fa-hand-holding-usd"></i> Prices & Services
+          </a>
+          <a href="FAQsnRevs.html" class="nav-button">
+            <i class="fas fa-question-circle"></i> FAQs
+          </a>
+        </nav>
+      </div>
     </header>
 
-    <main style="flex: 1; padding: 20px; box-sizing: border-box;">
-        <div class="container" style="display: flex; justify-content: space-between; padding: 10px; margin: 0 auto; max-width: 1000px; flex-wrap: wrap;">
-            <div class="location" style="flex: 1; min-width: 300px; background-color: #E3ECFA; border-radius: 10px; padding: 15px; margin-right: 40px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-                <h2 style="font-family: 'Playfair Display', serif; color: #000; text-align: center;">
-                    <i class="fa-solid fa-location-dot" style="margin-right: 0px;"></i> Our Location
-                </h2>
-                <p style="font-family: 'Playwright HU', Arial, sans-serif; font-size: 18px; color: #000; text-align: center;">4086 T. Bugallon St., Angeles City, Philippines</p>
-                <p style="text-align: center;">
-                    <a href="https://maps.app.goo.gl/CkXpsjdULx6oBnHQ7" target="_blank" style="font-family: 'Playfair Display', serif; font-size: 18px; color: #82A2C2; text-decoration: none;">View on Google Maps</a>
-                </p>
-                <img src="Images/location.png" alt="Location Map" style="width: 100%; border-radius: 10px;">
-            </div>
-
-            <div class="social-media" style="flex: 1; min-width: 300px; background-color: #E3ECFA; border-radius: 10px; padding: 15px; text-align: center; box-sizing: border-box; max-height: 1000px; overflow: hidden; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-                <h2 style="font-family: 'Playfair Display', serif; color: #000; margin-bottom: 10px;">
-                    <i class="fa-solid fa-envelope" style="margin-right: 0px;"></i> Contact Us
-                </h2>
-                <p style="font-family: 'Playwright HU', Arial, sans-serif; font-size: 16px; color: #000;">If you want to reach out to us, feel free to contact us using any of the available methods below!</p>
-                <p style="text-align: center; margin: 10px 0;">
-                    <a href="https://www.facebook.com/CahiliBF" target="_blank" style="font-family: 'Playfair Display', serif; font-size: 16px; color: #4267B2; text-decoration: none;">
-                        <i class="fa-brands fa-facebook" style="margin-right: 0px;"></i> Facebook Page
-                    </a>
-                </p>
-                <img src="Images/fb.png" alt="Facebook Page" style="width: 100%; max-width: 400px; border-radius: 10px;">
-                <p style="font-family: 'Playwright HU', Arial, sans-serif; font-size: 16px; color: #000; margin: 20px 0 10px;">
-                    <i class="fa-solid fa-phone" style="margin-right: 0px;"></i> Contact Number
-                </p>
-                <p style="font-family: 'Playwright HU', Arial, sans-serif; font-size: 16px; color: #000; margin: 10px 0;">0925 816 3290</p>
-            </div>
+    <main style="flex: 1; padding: 20px; box-sizing: border-box">
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          margin: 0 auto;
+          max-width: 1000px;
+          flex-wrap: wrap;
+        "
+      >
+        <div
+          class="location"
+          style="
+            flex: 1;
+            min-width: 300px;
+            background-color: #e3ecfa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-right: 40px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <h2
+            style="
+              font-family: 'Playfair Display', serif;
+              color: #000;
+              text-align: center;
+            "
+          >
+            <i class="fa-solid fa-location-dot" style="margin-right: 0px"></i>
+            Our Location
+          </h2>
+          <p
+            style="
+              font-family: 'Playwright HU', Arial, sans-serif;
+              font-size: 18px;
+              color: #000;
+              text-align: center;
+            "
+          >
+            4086 T. Bugallon St., Angeles City, Philippines
+          </p>
+          <p style="text-align: center">
+            <a
+              href="https://maps.app.goo.gl/CkXpsjdULx6oBnHQ7"
+              target="_blank"
+              style="
+                font-family: 'Playfair Display', serif;
+                font-size: 18px;
+                color: #82a2c2;
+                text-decoration: none;
+              "
+              >View on Google Maps</a
+            >
+          </p>
+          <img
+            src="Images/location.png"
+            alt="Location Map"
+            style="width: 100%; border-radius: 10px"
+          />
         </div>
+
+        <div
+          class="social-media"
+          style="
+            flex: 1;
+            min-width: 300px;
+            background-color: #e3ecfa;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-sizing: border-box;
+            max-height: 1000px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <h2
+            style="
+              font-family: 'Playfair Display', serif;
+              color: #000;
+              margin-bottom: 10px;
+            "
+          >
+            <i class="fa-solid fa-envelope" style="margin-right: 0px"></i>
+            Contact Us
+          </h2>
+          <p
+            style="
+              font-family: 'Playwright HU', Arial, sans-serif;
+              font-size: 16px;
+              color: #000;
+            "
+          >
+            If you want to reach out to us, feel free to contact us using any of
+            the available methods below!
+          </p>
+          <p style="text-align: center; margin: 10px 0">
+            <a
+              href="https://www.facebook.com/CahiliBF"
+              target="_blank"
+              style="
+                font-family: 'Playfair Display', serif;
+                font-size: 16px;
+                color: #4267b2;
+                text-decoration: none;
+              "
+            >
+              <i class="fa-brands fa-facebook" style="margin-right: 0px"></i>
+              Facebook Page
+            </a>
+          </p>
+          <img
+            src="Images/fb.png"
+            alt="Facebook Page"
+            style="width: 100%; max-width: 400px; border-radius: 10px"
+          />
+          <p
+            style="
+              font-family: 'Playwright HU', Arial, sans-serif;
+              font-size: 16px;
+              color: #000;
+              margin: 20px 0 10px;
+            "
+          >
+            <i class="fa-solid fa-phone" style="margin-right: 0px"></i> Contact
+            Number
+          </p>
+          <p
+            style="
+              font-family: 'Playwright HU', Arial, sans-serif;
+              font-size: 16px;
+              color: #000;
+              margin: 10px 0;
+            "
+          >
+            0925 816 3290
+          </p>
+        </div>
+      </div>
     </main>
 
-    <footer style="padding: 10px; text-align: center;">
-        <div style="display: inline-block; width: 60%; border-top: 2px solid black; padding-top: 5px; margin-top: 10px; text-align: center;">
-            <p style="margin: 0;">Cahili Birthing Clinic</p>
-            <p style="margin: 5px 0 0;">Copyright @ 2018 All Rights Reserved</p>
-        </div>
+    <footer style="padding: 10px; text-align: center">
+      <div
+        style="
+          display: inline-block;
+          width: 60%;
+          border-top: 2px solid black;
+          padding-top: 5px;
+          margin-top: 10px;
+          text-align: center;
+        "
+      >
+        <p style="margin: 0">Cahili Birthing Clinic</p>
+        <p style="margin: 5px 0 0">Copyright @ 2018 All Rights Reserved</p>
+      </div>
     </footer>
 
     <script>
-        function adjustLayout() {
-            var container = document.querySelector('.container');
-            var location = document.querySelector('.location');
-            var socialMedia = document.querySelector('.social-media');
+      function adjustLayout() {
+        var container = document.querySelector(".container");
+        var location = document.querySelector(".location");
+        var socialMedia = document.querySelector(".social-media");
 
-            if (window.innerWidth <= 768) {
-                container.style.flexDirection = 'column';
-                location.style.marginRight = '0';
-                location.style.width = '100%';
-                socialMedia.style.width = '100%';
-            } else {
-                container.style.flexDirection = 'row';
-                location.style.marginRight = '40px';
-                location.style.width = '70%';
-                socialMedia.style.width = '60%';
-            }
+        if (window.innerWidth <= 768) {
+          container.style.flexDirection = "column";
+          location.style.marginRight = "0";
+          location.style.width = "100%";
+          socialMedia.style.width = "100%";
+        } else {
+          container.style.flexDirection = "row";
+          location.style.marginRight = "40px";
+          location.style.width = "70%";
+          socialMedia.style.width = "60%";
         }
-        adjustLayout();
-        window.addEventListener('resize', adjustLayout);
+      }
+      adjustLayout();
+      window.addEventListener("resize", adjustLayout);
     </script>
-</body>
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          var navbar = document.getElementById("navbar");
+          navbar.classList.toggle("show");
+        });
+    </script>
+  </body>
 </html>

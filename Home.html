@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="Home.css" />
     <title>Cahili Birthing Facility</title>
   </head>
+
   <body>
     <header id="header">
       <div class="header-container">
-        <a href="#home">
+        <a href="Home.html">
           <img
             class="logo"
             src="Images/Cahili_Logo.png"
@@ -33,25 +34,23 @@
         <button class="navbar-toggle" id="navbar-toggle">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="navbar-button" id="navbar-container">
-          <nav id="navbar">
-            <a href="#home" class="nav-button">
-              <i class="fas fa-home"></i> Home
-            </a>
-            <a href="about.html" class="nav-button">
-              <i class="fas fa-info-circle"></i> About
-            </a>
-            <a href="#contact" class="nav-button">
-              <i class="fas fa-user"></i> Contact
-            </a>
-            <a href="priceServices.html" class="nav-button">
-              <i class="fas fa-dollar-sign"></i> Prices & Services
-            </a>
-            <a href="#more" class="nav-button">
-              <i class="fas fa-ellipsis-h"></i> More
-            </a>
-          </nav>
-        </div>
+        <nav id="navbar" class="navbar-button">
+          <a href="Home.html" class="nav-button">
+            <i class="fas fa-home"></i> Home
+          </a>
+          <a href="about.html" class="nav-button">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+          <a href="contact us.html" class="nav-button">
+            <i class="fas fa-user"></i> Contact
+          </a>
+          <a href="priceServices.html" class="nav-button">
+            <i class="fas fa-hand-holding-usd"></i> Prices & Services
+          </a>
+          <a href="FAQsnRevs.html" class="nav-button">
+            <i class="fas fa-question-circle"></i> FAQs
+          </a>
+        </nav>
       </div>
     </header>
 
@@ -67,7 +66,7 @@
               <h3>where we provide...</h3>
               <h1>Quality Care</h1>
               <h3>The best care for mothers and babies</h3>
-              <a href="#more-info" class="learn-more-button">
+              <a href="about.html" class="learn-more-button">
                 LEARN MORE <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -78,7 +77,7 @@
               <h3>where we provide...</h3>
               <h1>Exceptional Support</h1>
               <h3>Committed to the well-being of families</h3>
-              <a href="#more-info" class="learn-more-button">
+              <a href="about.html" class="learn-more-button">
                 LEARN MORE <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -89,7 +88,7 @@
               <h3>where we provide...</h3>
               <h1>Personalized Attention</h1>
               <h3>Tailored care to meet individual needs</h3>
-              <a href="#more-info" class="learn-more-button">
+              <a href="about.html" class="learn-more-button">
                 LEARN MORE <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -104,13 +103,8 @@
       document
         .getElementById("navbar-toggle")
         .addEventListener("click", function () {
-          console.log("Navbar toggle clicked"); // Debug log
-          var navbarContainer = document.getElementById("navbar");
-          if (navbarContainer.classList.contains("show")) {
-            navbarContainer.classList.remove("show");
-          } else {
-            navbarContainer.classList.add("show");
-          }
+          var navbar = document.getElementById("navbar");
+          navbar.classList.toggle("show");
         });
     </script>
 

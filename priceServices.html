@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prices & Services - Cahili Birthing Clinic</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prices & Services - Cahili Birthing Clinic</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nova+Script&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
@@ -21,150 +30,183 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
     />
     <link rel="stylesheet" href="Home.css" />
-  <style>
-    @font-face {
-      font-family: 'Canva Sans';
-      src: url('fonts/CanvaSans.ttf') format('truetype'); /* Path to your local font */
-    }
+    <style>
+      @font-face {
+        font-family: "Canva Sans";
+        src: url("fonts/CanvaSans.ttf") format("truetype"); /* Path to your local font */
+      }
 
-    html, body {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      font-family: 'Canva Sans', sans-serif; /* Apply Canva Sans font */
-      font-size: 18px;
-      line-height: 1.6;
-    }
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: "Canva Sans", sans-serif; /* Apply Canva Sans font */
+        font-size: 18px;
+        line-height: 1.6;
+      }
 
-    body {
-      background-color: #c1d3fe;
-      color: #002960;
-      flex-grow: 1;
-    }
+      body {
+        background-color: #c1d3fe;
+        color: #002960;
+        flex-grow: 1;
+      }
 
-    .section-title h2 {
-      font-size: 48px; /* Largest font size for "Prices & Services" */
-      font-weight: bold;
-    }
+      .section-title h2 {
+        font-size: 48px; /* Largest font size for "Prices & Services" */
+        font-weight: bold;
+      }
 
-    .section-title p {
-      font-size: 24px; /* Medium font size for subheading */
-      margin-bottom: 5px;
-    }
+      .section-title p {
+        font-size: 24px; /* Medium font size for subheading */
+        margin-bottom: 5px;
+      }
 
-    .section-title .text-muted {
-      font-size: 15px; /* Smaller font size for Department of Health message */
-      margin-top: 2px; /* Reduce space above the message */
-    }
+      .section-title .text-muted {
+        font-size: 15px; /* Smaller font size for Department of Health message */
+        margin-top: 2px; /* Reduce space above the message */
+      }
 
-    .service-item {
-      background: #FFDAC5;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      margin-bottom: 40px;
-      font-size: 20px;
-    }
+      .service-item {
+        background: #ffdac5;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
 
-    .service-item .title {
-      font-size: 26px;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
+      .service-item .title {
+        font-size: 26px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
 
-    .service-item img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      margin-bottom: 15px;
-    }
+      .service-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
 
-    .container {
-      padding-bottom: 20px;
-      padding-top: 40px;
-    }
+      .container {
+        padding-bottom: 20px;
+        padding-top: 40px;
+      }
 
-    footer {
-      background-color: #002960;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 18px;
-      margin-top: auto;
-    }
-  </style>
-</head>
-<body>
-  <header id="header">
-    <div class="header-container">
-      <a href="Home.html">
-        <img
-          class="logo"
-          src="Images/Cahili_Logo.png"
-          alt="Cahili Birthing Facility"
-        />
-      </a>
-      <button class="navbar-toggle" id="navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="navbar-button" id="navbar-container">
-        <nav id="navbar">
+      footer {
+        background-color: #002960;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 18px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <a href="Home.html">
+          <img
+            class="logo"
+            src="Images/Cahili_Logo.png"
+            alt="Cahili Birthing Facility"
+          />
+        </a>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav id="navbar" class="navbar-button">
           <a href="Home.html" class="nav-button">
             <i class="fas fa-home"></i> Home
           </a>
           <a href="about.html" class="nav-button">
             <i class="fas fa-info-circle"></i> About
           </a>
-          <a href="#contact" class="nav-button">
+          <a href="contact us.html" class="nav-button">
             <i class="fas fa-user"></i> Contact
           </a>
           <a href="priceServices.html" class="nav-button">
-            <i class="fas fa-dollar-sign"></i> Prices & Services
+            <i class="fas fa-hand-holding-usd"></i> Prices & Services
           </a>
-          <a href="#more" class="nav-button">
-            <i class="fas fa-ellipsis-h"></i> More
+          <a href="FAQsnRevs.html" class="nav-button">
+            <i class="fas fa-question-circle"></i> FAQs
           </a>
         </nav>
       </div>
+    </header>
+
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2>Prices & Services</h2>
+      <p>Explore our range of services and find out more about our pricing.</p>
+      <p class="text-muted">
+        Prices are displayed as per Department of Health guidelines.
+      </p>
     </div>
-  </header>
+    <!-- End Section Title -->
 
-  <div class="container section-title text-center" data-aos="fade-up">
-    <h2>Prices & Services</h2>
-    <p>Explore our range of services and find out more about our pricing.</p>
-    <p class="text-muted">Prices are displayed as per Department of Health guidelines.</p>
-  </div><!-- End Section Title -->
+    <div class="container">
+      <div class="row gy-4">
+        <div
+          class="col-lg-6 col-md-12 service-item d-flex flex-column"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="title text-center">Pricelist</div>
+          <a
+            href="Images/itemized price.png"
+            data-fancybox="gallery"
+            data-caption="Itemized Prices"
+          >
+            <img src="Images/itemized price.png" alt="Itemized Prices" />
+          </a>
+        </div>
+        <!-- End Service Item -->
 
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-6 col-md-12 service-item d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-        <div class="title text-center">Pricelist</div>
-        <a href="Images/itemized price.png" data-fancybox="gallery" data-caption="Itemized Prices">
-          <img src="Images/itemized price.png" alt="Itemized Prices">
-        </a>
-      </div><!-- End Service Item -->
+        <div
+          class="col-lg-6 col-md-12 service-item d-flex flex-column"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="title text-center">Price Packages</div>
+          <a
+            href="Images/price package.png"
+            data-fancybox="gallery"
+            data-caption="Price Packages"
+          >
+            <img src="Images/price package.png" alt="Price Packages" />
+          </a>
+        </div>
+        <!-- End Service Item -->
+      </div>
+      <!-- End Row -->
 
-      <div class="col-lg-6 col-md-12 service-item d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
-        <div class="title text-center">Price Packages</div>
-        <a href="Images/price package.png" data-fancybox="gallery" data-caption="Price Packages">
-          <img src="Images/price package.png" alt="Price Packages">
-        </a>
-      </div><!-- End Service Item -->
-    </div><!-- End Row -->
+      <p class="text-center mt-5">
+        For further questions, message us on our
+        <a href="https://www.facebook.com/CahiliBF" target="_blank"
+          >Facebook page</a
+        >.
+      </p>
+    </div>
+    <!-- End Container -->
 
-    <p class="text-center mt-5">For further questions, message us on our <a href="https://www.facebook.com/CahiliBF" target="_blank">Facebook page</a>.</p>
-  </div><!-- End Container -->
+    <footer>© 2024 Cahili Birthing Clinic. All rights reserved.</footer>
 
-  <footer>
-    © 2024 Cahili Birthing Clinic. All rights reserved.
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          var navbar = document.getElementById("navbar");
+          navbar.classList.toggle("show");
+        });
+    </script>
+  </body>
 </html>

@@ -1,237 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ABOUTⓘ</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nerko+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nova+Script&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap"
-  rel="stylesheet"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
-/>
-<link rel="stylesheet" href="Home.css" />
-
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nova+Script&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="Home.css" />
 
     <style>
-        body {
-            font-family: 'Lora', sans-serif;
-            background: url('Images/Smiling-Baby.jpg') no-repeat center center fixed; 
-            background-size: cover;
-            position: relative;
-            z-index: 1;
-        }
-        
-        
+      body {
+        font-family: "Lora", sans-serif;
+        background: url("Images/Smiling-Baby.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+      }
 
-.cloud-background {
-    background: url('Images/cloud.png') no-repeat center center;
-    background-size: cover;
-    color: white; 
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
-    text-align: center;
-    position: relative;
-}
+      .cloud-background {
+        background: url("Images/cloud.png") no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+      }
 
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        z-index: -1;
+      }
 
-       
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.7); 
-            z-index: -1;
-        }
+      .info-text {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-size: 2.5em;
+        color: #4e647d;
+        margin-top: 40px;
+        font-weight: bold;
+      }
 
-       
-        .info-text {
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 2.5em;
-            color: #4e647d;
-            margin-top: 40px;
-            font-weight: bold;
-        }
+      .team-title {
+        text-align: center;
+        font-size: 4.5em;
+        margin-top: 20px;
+        font-weight: 600;
+        color: #111961;
+      }
 
-        .team-title {
-            text-align: center;
-            font-size: 4.5em;
-            margin-top: 20px;
-            font-weight: 600;
-            color: #111961;
-        }
+      .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        gap: 20px;
+      }
 
-        .team-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 40px 0;
-            gap: 20px;
-        }
+      .team-member {
+        font-family: "Nerko One", sans-serif;
+        margin: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
 
-        .team-member {
-            font-family: 'Nerko One', sans-serif;
-            margin: 20px;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+      .team-member:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
 
-        .team-member:hover {
-            transform: translateY(-10px); 
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        }
+      .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+        border: 3px solid #ffbf00;
+      }
 
-        .team-member img {
-            border-radius: 50%; 
-            width: 150px;
-            height: 150px;
-            margin-bottom: 15px;
-            border: 3px solid #ffbf00;
-        }
+      .team-member h4 {
+        font-size: 1.5em;
+        color: #4e647d;
+      }
 
-        .team-member h4 {
-            font-size: 1.5em;
-            color: #4e647d;
-        }
+      .history-text {
+        border: 3px solid #ffbf00;
+        text-align: justify;
+        font-size: 1.2em;
+        margin-top: 20px;
+        color: #555;
+        padding: 0 40px;
+        line-height: 1.8;
+        font-weight: 400;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
-        .history-text {
-            border: 3px solid #ffbf00;
-            text-align: justify;
-            font-size: 1.2em;
-            margin-top: 20px;
-            color: #555;
-            padding: 0 40px;
-            line-height: 1.8;
-            font-weight: 400;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+      .mission-text {
+        font-size: 2pc;
+        border: 3px solid #ffbf00;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
-        .mission-text {
-            font-size: 2pc;
-            border: 3px solid #ffbf00;
-            text-align: justify;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .team-title, .history-text, .mission-text {
-            margin-bottom: 20px;
-        }
+      .team-title,
+      .history-text,
+      .mission-text {
+        margin-bottom: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <header id="header">
-        <div class="header-container">
-          <a href="Home.html">
-            <img
-              class="logo"
-              src="Images/Cahili_Logo.png"
-              alt="Cahili Birthing Facility"
-            />
+      <div class="header-container">
+        <a href="Home.html">
+          <img
+            class="logo"
+            src="Images/Cahili_Logo.png"
+            alt="Cahili Birthing Facility"
+          />
+        </a>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav id="navbar" class="navbar-button">
+          <a href="Home.html" class="nav-button">
+            <i class="fas fa-home"></i> Home
           </a>
-          <button class="navbar-toggle" id="navbar-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="navbar-button" id="navbar-container">
-            <nav id="navbar">
-              <a href="Home.html" class="nav-button">
-                <i class="fas fa-home"></i> Home
-              </a>
-              <a href="about.html" class="nav-button">
-                <i class="fas fa-info-circle"></i> About
-              </a>
-              <a href="#contact" class="nav-button">
-                <i class="fas fa-user"></i> Contact
-              </a>
-              <a href="priceServices.html" class="nav-button">
-                <i class="fas fa-dollar-sign"></i> Prices & Services
-              </a>
-              <a href="#more" class="nav-button">
-                <i class="fas fa-ellipsis-h"></i> More
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header>
+          <a href="about.html" class="nav-button">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+          <a href="contact us.html" class="nav-button">
+            <i class="fas fa-user"></i> Contact
+          </a>
+          <a href="priceServices.html" class="nav-button">
+            <i class="fas fa-hand-holding-usd"></i> Prices & Services
+          </a>
+          <a href="FAQsnRevs.html" class="nav-button">
+            <i class="fas fa-question-circle"></i> FAQs
+          </a>
+        </nav>
+      </div>
+    </header>
 
     <div class="container">
-        <div class="info-text">ABOUTⓘ</div>
+      <div class="info-text">ABOUTⓘ</div>
 
-        <h1 class="team-title">MEET OUR CARING TEAM</h1>
+      <h1 class="team-title">MEET OUR CARING TEAM</h1>
 
-        <div class="team-container">
-            <div class="team-member">
-                <img src="Images/employee1.png" alt="Elaine Cahili">
-                <h4>Elaine Cahili</h4>
-            </div>
-            <div class="team-member">
-                <img src="Images/employee1.png" alt="Alvyn Cahili">
-                <h4>Alvyn Cahili</h4>
-            </div>
-            <div class="team-member">
-                <img src="Images/employee1.png" alt="Haydee Calledo">
-                <h4>Haydee Calledo</h4>
-            </div>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="Images/employee1.png" alt="Elaine Cahili" />
+          <h4>Elaine Cahili</h4>
         </div>
+        <div class="team-member">
+          <img src="Images/employee1.png" alt="Alvyn Cahili" />
+          <h4>Alvyn Cahili</h4>
+        </div>
+        <div class="team-member">
+          <img src="Images/employee1.png" alt="Haydee Calledo" />
+          <h4>Haydee Calledo</h4>
+        </div>
+      </div>
 
-        <h1 class="team-title cloud-background">KNOW OUR HISTORY</h1>
+      <h1 class="team-title cloud-background">KNOW OUR HISTORY</h1>
 
-        <p class="history-text ">
-            The Cahili Birthing Facility was founded in 2018 by a seasoned midwife who saw both a need and an opportunity within her community. With years of experience in maternal care, she understood the challenges many families faced when it came to accessing quality birthing services. Hospitals often came with high costs, long waits, and a clinical atmosphere that many expecting mothers found overwhelming. The idea for the Cahili Birthing Facility was born out of a desire to create a more personalized and affordable alternative, where families could feel supported and cared for in a comfortable environment.
+      <p class="history-text">
+        The Cahili Birthing Facility was founded in 2018 by a seasoned midwife
+        who saw both a need and an opportunity within her community. With years
+        of experience in maternal care, she understood the challenges many
+        families faced when it came to accessing quality birthing services.
+        Hospitals often came with high costs, long waits, and a clinical
+        atmosphere that many expecting mothers found overwhelming. The idea for
+        the Cahili Birthing Facility was born out of a desire to create a more
+        personalized and affordable alternative, where families could feel
+        supported and cared for in a comfortable environment.
 
-            <br><br>The facility was not just a business venture but a fulfillment of the founder’s lifelong passion for midwifery and maternal health. She envisioned a space where the age-old practice of midwifery could be combined with modern medical advancements to offer safe, holistic, and empathetic care. By providing a range of services from prenatal to postnatal care, all within a welcoming and serene setting, the facility aimed to become a trusted resource for mothers-to-be. It was this commitment to quality and compassion that quickly set the Cahili Birthing Facility apart from other options in the region.
-  
-            <br><br>In establishing the Cahili Birthing Facility, the founder was also motivated by a desire to support the local community. Understanding that financial constraints often limit access to essential healthcare services, she made it a priority to offer various affordable packages. These packages were designed to accommodate different needs and budgets, ensuring that no family would have to compromise on the quality of care due to financial reasons. This focus on affordability has been a cornerstone of the facility’s operations, reflecting the founder’s deep commitment to serving her community.
-  
-            <br><br>Over the years, the Cahili Birthing Facility has grown, both in reputation and in the scope of services offered. The clinic has expanded its team to include other skilled midwives, nurses, and healthcare professionals who share the founder’s vision of compassionate care. Together, they have built a strong network of support that extends beyond just the birthing process, offering educational resources, wellness programs, and community outreach initiatives. The facility has become a hub for maternal health in the area, providing not only care but also a sense of community and support for expecting families.
-  
-            <br><br>Today, the Cahili Birthing Facility continues to thrive, driven by its founding principles of accessibility, affordability, and compassionate care. The facility’s success is a testament to the founder’s vision and the dedicated team that works tirelessly to uphold it. As it looks to the future, the Cahili Birthing Facility remains committed to evolving and expanding its services, ensuring that it can meet the ever-changing needs of the families it serves. The facility stands as a beacon of hope and support for mothers-to-be, offering them a place where they can feel safe, valued, and cared for during one of the most important moments of their lives.
-          </p>
-  
+        <br /><br />The facility was not just a business venture but a
+        fulfillment of the founder’s lifelong passion for midwifery and maternal
+        health. She envisioned a space where the age-old practice of midwifery
+        could be combined with modern medical advancements to offer safe,
+        holistic, and empathetic care. By providing a range of services from
+        prenatal to postnatal care, all within a welcoming and serene setting,
+        the facility aimed to become a trusted resource for mothers-to-be. It
+        was this commitment to quality and compassion that quickly set the
+        Cahili Birthing Facility apart from other options in the region.
 
-        <h1 class="team-title cloud-background">OUR MISSION AND VISION</h1> 
-        <p class="mission-text">
-            <b>Mission</b>:<br> To provide quality and affordable maternal, newborn, and child health nutrition services to the community.
-            <br><br>
-            <b>Vision</b>:<br> To be the number one birthing facility in Angeles City.
-        </p>
+        <br /><br />In establishing the Cahili Birthing Facility, the founder
+        was also motivated by a desire to support the local community.
+        Understanding that financial constraints often limit access to essential
+        healthcare services, she made it a priority to offer various affordable
+        packages. These packages were designed to accommodate different needs
+        and budgets, ensuring that no family would have to compromise on the
+        quality of care due to financial reasons. This focus on affordability
+        has been a cornerstone of the facility’s operations, reflecting the
+        founder’s deep commitment to serving her community.
+
+        <br /><br />Over the years, the Cahili Birthing Facility has grown, both
+        in reputation and in the scope of services offered. The clinic has
+        expanded its team to include other skilled midwives, nurses, and
+        healthcare professionals who share the founder’s vision of compassionate
+        care. Together, they have built a strong network of support that extends
+        beyond just the birthing process, offering educational resources,
+        wellness programs, and community outreach initiatives. The facility has
+        become a hub for maternal health in the area, providing not only care
+        but also a sense of community and support for expecting families.
+
+        <br /><br />Today, the Cahili Birthing Facility continues to thrive,
+        driven by its founding principles of accessibility, affordability, and
+        compassionate care. The facility’s success is a testament to the
+        founder’s vision and the dedicated team that works tirelessly to uphold
+        it. As it looks to the future, the Cahili Birthing Facility remains
+        committed to evolving and expanding its services, ensuring that it can
+        meet the ever-changing needs of the families it serves. The facility
+        stands as a beacon of hope and support for mothers-to-be, offering them
+        a place where they can feel safe, valued, and cared for during one of
+        the most important moments of their lives.
+      </p>
+
+      <h1 class="team-title cloud-background">OUR MISSION AND VISION</h1>
+      <p class="mission-text">
+        <b>Mission</b>:<br />
+        To provide quality and affordable maternal, newborn, and child health
+        nutrition services to the community. <br /><br />
+        <b>Vision</b>:<br />
+        To be the number one birthing facility in Angeles City.
+      </p>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          var navbar = document.getElementById("navbar");
+          navbar.classList.toggle("show");
+        });
+    </script>
+  </body>
 </html>
